@@ -13,8 +13,8 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          distribution: 17
-          java-version: 'zulu'
+          distribution: 'zulu'
+          java-version: 17
 
       # repository secrets에 올린 application.yml을 빌드 시 생성
       # blog 패키지 안으로 이동해야 하는 것 주의
