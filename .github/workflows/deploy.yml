@@ -62,7 +62,7 @@ jobs:
           # 아래 명령들을 실행
           # 호스트의 포트번호: 컨테이너 내부 포트번호
           script: |
-            sudo docker rm -f ${sudo docker ps -qa)
+            sudo docker rm -f $(sudo docker ps -qa)
             sudo docker pull ${{ secrets.DOCKER_REPO }}:latest
             sudo docker run -d -p 8080:8080 ${{ secrets.DOCKER_REPO }}:latest
             sudo docker image prune -f
